@@ -6,6 +6,9 @@ Created on 2015-11-1
 '''
 import sys
 
+def test():
+    print('hello world, huzhengchuan!')
+
 if __name__ == '__main__':
     print "Hello World, The first python code!"
     
