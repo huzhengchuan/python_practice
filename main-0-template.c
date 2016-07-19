@@ -26,6 +26,7 @@ int child_main(void *arg)
 int main()
 {
 	printf("- Hello\r\n");
+	printf("- 2world\r\n");
 	int child_pid = clone(child_main, child_stack + STACK_SIZE, SIGCHLD | CLONE_NEWUTS, NULL);
 	waitpid(child_pid, NULL, 0);
 	return 0;
